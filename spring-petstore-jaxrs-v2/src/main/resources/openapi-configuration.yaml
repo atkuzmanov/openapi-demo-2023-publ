@@ -1,0 +1,11 @@
+resourcePackages:
+  - org.openapitools
+prettyPrint: true
+cacheTTL: 0
+openAPI:
+  info:
+    version: '1.0'
+    title: spring-petstore-jaxrs-v2 swagger openapi spec
+    description: 'spring-petstore-jaxrs-v2 swagger openapi spec'
+  servers:
+    - url: http://localhost:8080

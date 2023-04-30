@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  myapp:
+    build: ../../../../
+    ports:
+      - "8080:8080"
+    restart: always
+    depends_on:
+      - mongodb
+    container_name: spring-petstore-jaxrs-v2
+  mongodb:
+    image: mongo:5.0.14
+    ports:
+      - "27017:27017"
+    restart: always
+    container_name: mongodb
+    volumes:
+      - ./data:/data/db
